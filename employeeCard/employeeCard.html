@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/t_styles.css" />
+    <script src="js/scripts.js"></script>
+    <title>bootcamp 101</title>
+</head>
+<body onload="getData()">
+    <H1 class="title">כרטיס עובד</H1>
+    <div class="year">שנת המס <span id="year">XXX</span></div>
+    <div class="innerSection">
+        <div class="oneTab" id="t1" onclick="openTab('t1')">מעביד</div>
+        <div class="oneTab" id="t2" onclick="openTab('t2')">עובד</div>
+        <div class="oneTab" id="t3" onclick="openTab('t3')">ילדים</div>
+        <div class="oneTab" id="t4" onclick="openTab('t4')">הכנסות</div>
+        <div class="outerData">
+            <div id="d1" class="innerData">
+                <div class="inputArea">
+                    <div class="label" style="font-size:80%;" id="lb01">שם המעביד*</div>
+                    <br>
+                    <input id="in01" type="text" placeholder="שם המעביד" onfocus="showLabel('in01')" onblur="hideLabel('in01')"/>
+                    <br>
+                    <div class="label" style="font-size:80%;" id="lb02">כתובת*</div>
+                    <br>
+                    <input id="in02" type="text" placeholder="כתובת" onfocus="showLabel('in02')" onblur="hideLabel('in02')"/>
+                    <br>
+                    <div class="label" style="font-size:80%;" id="lb03">מספר טלפון*</div>
+                    <br>
+                    <input id="in03" type="text" placeholder="מספר טלפון" onfocus="showLabel('in03')" onblur="hideLabel('in03')"/>
+                    <br>
+                    <div class="label" style="font-size:80%;" id="lb04">מספר תיק ניכויים*</div>
+                    <br>
+                    <input id="in04" type="text" placeholder="מספר תיק ניכויים" onfocus="showLabel('in04')" onblur="hideLabel('in04')"/>
+                </div>
+                
+            </div>
+            <div id="d2" class="innerData" >
+            <div style="font-size:70%;" id="lb05">מספר זהות (9 ספרות)*</div>
+            <br>
+            <input style="width: 30%;height: 10%;"id="in10" type="text" placeholder="מספר זהות"/>
+            <br>
+            <div style="font-size:70%;" id="lb06">שם משפחה*</div>
+            <br>
+            <input style="width: 30%;height: 10%;"id="in11" type="text" placeholder="שם משפחה"/>
+            <br>
+            <div style="font-size:70%;" id="lb07">שם פרטי*</div>
+            <br>
+            <input style="width: 30%;height: 10%;"id="in12" type="text" placeholder="שם פרטי"/>
+            <br>
+            <form >
+                                תאריך לידה*
+                <br>
+                <input type="date" id="lb08" style="width: 30%;height:40px;font-size:14px" name="bday">
+                        </form>
+            <form >
+                תאריך עליה*
+            <br>
+            <input type="date" id="lb09" style="width: 30%;height:40px;font-size:14px" name="bday">
+                    </form>
+            <br>
+           <div
+            <div style="font-size:70%;" id="lb10">מספר טלפון*</div>
+                               <br>
+             <input style="width: 30%;height: 10%;"id="in12" type="text" placeholder="מספר טלפון"/>
+                               <br>
+            <div style="font-size:70%;"id="lb10">מספר טלפון נייד*</div>
+                              <br>
+            <input style="width: 30%;height: 10%;"id="in12" type="text" placeholder="מספר טלפון נייד"/>
+                              <br>
+               <form>מין*
+                   <br>
+                   <select id="mySelect" style="width:150px;">
+                       <option id="in05"  >זכר</option>
+                       <option id="in06" > נקבה</option>
+                      
+                   </select>
+               </form>
+               <form>מצב משפחתי *
+                   <br>
+                   <select id="lb09" id="mySelect" style="width:150px;">
+                       <option id="in05" >רווק/ה</option>
+                       <option id="in06">אלמן/ה</option>
+                       <option id="in07"> נשוי/אה</option>
+                       <option id="in08">גרוש/ה</option>
+                       <option id="in09"> פרוד/ה (חובה לצרף אישור פ"ש)</option>
+                      
+                   </select>
+               </form>
+            <br>
+            <form>חבר קיבוץ/מושב שיתופי*
+                <br>
+                <select id="mySelect" style="width:150px;">
+                    <option id="in05">כן</option>
+                    <option id="in06">לא</option>
+                   
+                </select>
+            </form>
+            <form>מצב משפחתי *
+                <br>
+                <select id="lb09" id="mySelect" style="width:150px;">
+                    <option id="in05" >רווק/ה</option>
+                    <option id="in06">אלמן/ה</option>
+                    <option id="in07"> נשוי/אה</option>
+                    <option id="in08">גרוש/ה</option>
+                    <option id="in09"> פרוד/ה (חובה לצרף אישור פ"ש)</option>
+                   
+                </select>
+            </form>
+        
+            </div>
+            <div id="d3" class="innerData" style="display:none">ccc</div>
+            <div id="d4" class="innerData" style="display:none">
+            <form >תאריך תחילה העבודה*
+            <br>
+            <input type="date" id="lb09" style="width: 30%;height:40px;font-size:14px;" name="bday">
+                    </form>
+            <br>
+                     <form>אני מקבל/ת:*
+                         <br>
+                         <select id="mySelect" style="width:150px;">
+                             <option id="in05">משכורת חודש</option>
+                             <option id="in06">משכורת בעד משרה נוספת</option>
+                             <option id="in06"> משכורת חלקית</option>
+                             <option id="in06">שכר עבודה (עובד יומי)</option>
+                             <option id="in06">קצבה</option>
+                             <option id="in06"> מלגה</option>
+                            
+                         </select>
+                     </form>
+                     <br>
+            <br></div>
+        </div>
+    </div>
+</body>
+</html>

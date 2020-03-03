@@ -1,0 +1,106 @@
+html, body
+{
+    height:100%;
+    font-family: 'Sofia';
+}
+
+body {
+    margin:0px;
+    padding:0px;
+    font-size:20px;
+    font-family:Arial;
+    direction:rtl;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin: 0px;
+}
+
+.year {
+    float: right;
+    width: 100%;
+    text-align: center
+}
+
+.innerSection {
+    margin: 0px auto;
+    width: 800px;
+    height:600px;
+}
+
+.oneTab {
+    float: right;
+    width: 20%;
+    height: 7.5%;
+    margin-left: 0.5%;
+    background-color: #BABABA;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align:center;
+    padding-top:8px;
+}
+
+.oneTab:hover{background-color:#7aBABA}
+
+.outerData {
+    float: right;
+    width: 100%;
+    height: 70%;
+    margin-top: -6px;
+    background-color: #EAEAEA
+}
+
+.innerData {
+    width: 50%;
+    display:none;
+    font-size:20px;
+    height: 10%;
+    padding: 20px
+Padding-left:100px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #333333;
+  font-size:1.2em;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #333333;
+    font-size: 1.2em;
+}
+
+::placeholder {
+    color: #333333;
+    font-size: 1.2em;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    background-color: #BABABA;
+    border-radius: 5px;
+    border: 0px;
+    box-sizing: border-box;
+    padding-right: 10px;
+    outline:none;
+}
+.inputArea {
+    float: right;
+    width: 40%;
+    height: 40px
+}
+
+    .inputArea .label {
+        float: right;
+        width: 100%;
+        font-size: 10px;
+        display: none
+    }
+
