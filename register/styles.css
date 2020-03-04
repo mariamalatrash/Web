@@ -1,0 +1,45 @@
+body{
+    background: linear-gradient(-135deg, #50c4c8, pink);
+}
+
+.myclass {
+    -webkit-tap-highlight-color: #a72727;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.0;
+    color: #212529;
+    font-family: Poppins-Regular, sans-serif;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 56px;
+    box-sizing: border-box;
+    width: 849px;
+    height: 814px;
+    background: #ffffff;
+    border-radius: 37px;
+    overflow: overlay;
+    display: flex;
+    justify-content: space-between;
+    padding: 274px;
+    padding-top:140px;
+}
+.q1 {
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    touch-action: manipulation;
+    margin: 0;
+    overflow: visible;
+    outline: none;
+    border: none;
+    font-family: Poppins-Medium;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 30px 0 68px;
+}
+
