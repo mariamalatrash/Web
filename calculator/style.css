@@ -1,7 +1,7 @@
 
 *{margin:0;padding:0}
 body {
-    background: linear-gradient(-135deg, pink, #a7d041);
+    background: linear-gradient(-215deg,#54ff008c,pink);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -29,8 +29,6 @@ body {
     padding-top:160px;
 }
 .input100 {
-    -webkit-tap-highlight-color: transparent;
-    box-sizing: border-box;
     touch-action: manipulation;
     margin: 0;
     overflow: visible;
